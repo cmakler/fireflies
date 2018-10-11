@@ -1,0 +1,82 @@
+<!doctype>
+<html>
+
+<head>
+
+	<!-- TRANSLATE: 'title' -->
+	<title>Fireflies</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=640">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- TRANSLATE: 'name' and 'description' -->
+	<meta itemprop="name" content="Fireflies">
+	<meta itemprop="description" content="a small simulation of small fireflies">
+	<meta itemprop="image" content="http://ncase.me/fireflies/social/thumbnail.png">
+
+	<!-- TRANSLATE: 'twitter:title' and 'twitter:description' -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Fireflies">
+	<meta name="twitter:description" content="a small simulation of small fireflies">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="http://ncase.me/fireflies/social/thumbnail.png">
+
+	<!-- TRANSLATE: 'og:title' and 'og:description' -->
+	<meta property="og:title" content="Fireflies">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://ncase.me/fireflies/">
+	<meta property="og:image" content="http://ncase.me/fireflies/social/thumbnail.png">
+	<meta property="og:description" content="a small simulation of small fireflies">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/widgets.css">
+
+</head>
+<body>
+
+<!-- The firefly simulation -->
+<div id="game"></div>
+
+<!-- The WORDS! -->
+<div id="words">
+
+    <widget type="toggle"
+		id="neighborNudgeRule"
+		background="#000" color="#fff"
+		background-on="#FEE27F" color-on="#000"
+
+		label="“Nudge thy neighbor” behavior rule:"
+		label-on="ON" label-off="OFF">
+	</widget>
+
+    <widget type="toggle"
+		id="showClocks"
+		background="#000" color="#fff"
+		background-on="#FEE27F" color-on="#000"
+
+		label="Show each firefly's internal clock:"
+		label-on="ON" label-off="OFF">
+	</widget>
+
+    <p><i>adapted from <a href="http://ncase.me/fireflies">“Fireflies”</a> by <a href="http://ncase.me">Nicky Case</a></i></p>
+
+</div>
+
+</body>
+</html>
+
+<!-- Library code -->
+<script src="js/pixi.min.js"></script>
+<script src="js/howler.js"></script>
+<script src="js/minpubsub.src.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/Mouse.js"></script>
+<script src="js/widgets.js"></script>
+<script src="js/sharing.js"></script>
+
+<!-- Main code -->
+<script src="js/index.js?v=2"></script>
